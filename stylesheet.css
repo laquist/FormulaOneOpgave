@@ -1,0 +1,172 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#bgEffect 
+{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    background-image: url('img/site-background.jpg');
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+
+    /* transform: scale(1.015); */
+}
+
+#bodyWrapper 
+{
+    position: relative;
+}
+
+    header 
+    {
+        height: 529px;
+        
+        display: grid;
+        grid-template-rows: 41px 185px 1fr 30px;
+        grid-template-areas: 
+        "."
+        "nav"
+        "text"
+        "separator";
+    }
+
+    nav 
+    {
+        height: 185px;
+        width: 1811px; 
+        margin: 0 auto;
+
+        grid-area: nav;
+
+        display: grid;
+        grid-template-columns: 160px 1fr;
+
+        font-family: 'Open Sans', sans-serif;
+    }
+
+        nav img 
+        {
+            height: 185px;
+            position: relative;
+        }
+
+        #navContainer 
+        {
+            height: 80px;
+            margin: auto 0;
+            
+            padding-left: 65px;
+            background-color: rgba(0, 0, 0, 0.8)
+        }
+
+        nav ul 
+        {
+            margin: 0;
+            padding: 0;
+
+            display: grid;
+            grid-template-columns: 180px 180px 180px 1fr 180px;
+            grid-template-areas: "menu menu menu . login";
+        }
+
+        nav ul li 
+        {
+            display: inline;
+            list-style: none;
+            text-align: center;
+
+        }
+
+        nav ul li a 
+        {
+            padding: 1.3rem 0;
+            margin: 0;
+            display: block;
+
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 28px;
+            color: white;
+        }
+
+        #login 
+        {
+            grid-area: login;
+            background-color: #cd0101;
+        }
+
+        header section
+        {
+            grid-area: text;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-rows: 35px 100px 1fr;
+            grid-template-columns: 1fr 110px 1fr 110px 1fr;
+            grid-template-areas:
+            ". . . . ."
+            "top top top top top"
+            ". left mid right .";
+        }
+
+        header section img
+        {
+            display: inline;
+        }
+
+        #leftDots
+        {
+            grid-area: right;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+        
+        #rightDots
+        {
+            grid-area: left;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+
+        header h1 
+        {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            color: white;
+
+            margin: 0;
+            grid-area: top;
+        }
+
+        header h3 
+        {
+            text-transform: uppercase;
+            display: inline;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            
+            margin: 0;
+            grid-area: mid;
+        }
+
+        #separator 
+        {
+            grid-area: separator;
+            background-image: url(img/stribes.png);
+            background-repeat: repeat-x;
+        }
+
+main 
+{
+    background-color: rgba(0, 0, 0, 0.8);
+}
