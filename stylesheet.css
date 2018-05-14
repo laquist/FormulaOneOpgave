@@ -109,7 +109,7 @@ body
 
             display: grid;
             grid-template-rows: 35px 100px 1fr;
-            grid-template-columns: 1fr 110px 1fr 110px 1fr;
+            grid-template-columns: 1fr 110px 580px 110px 1fr;
             grid-template-areas:
             ". . . . ."
             "top top top top top"
@@ -147,7 +147,7 @@ body
             grid-area: top;
         }
 
-        header h3 
+        header h2 
         {
             text-transform: uppercase;
             display: inline;
@@ -169,4 +169,66 @@ body
 main 
 {
     background-color: rgba(0, 0, 0, 0.8);
+
+    display: grid;
+    grid-template-columns: 420px 1fr 1fr 1fr 420px;
+    grid-template-areas:
+    ". left mid right .";
 }
+
+    main section 
+    {
+        width: 340px;
+        height: 300px;
+        margin-top: 52px;
+        margin-right: 30px;
+    }
+
+    #topDrivers 
+    {
+        grid-area: left;
+        /* background-color: red; */
+    }
+
+    #topTeams
+    {
+        grid-area: mid;
+        /* background-color: blue; */
+    }
+
+    #upcomingTrack
+    {
+        grid-area: right;
+        /* background-color: green; */
+    }
+
+    .sectionTitles 
+    {
+        display: flex;
+        align-items:center;
+    }
+
+    .sectionTitles h3
+    {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        
+        color: white;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+
+    main section article
+    {
+        width: 100%;
+        height: 93px;
+        background: rgba(0, 0, 0, 0.8);
+        margin: 8px 0px;
+    }
+
+    #trackArticle
+    {
+        /* height: 188px; */
+        /* Lad indholdet bestemme højden. Denne er bare TEMP */
+    }
