@@ -12,11 +12,7 @@ body
 
     position: absolute;
 
-    background-image: url('img/site-background.jpg');
-    -webkit-filter: blur(6px);
-    filter: blur(6px);
-
-    /* transform: scale(1.015); */
+    background-image: url('img/site-background-blurred-v2.jpg');
 }
 
 #bodyWrapper 
@@ -39,7 +35,6 @@ body
 
     nav 
     {
-        height: 185px;
         width: 1811px; 
         margin: 0 auto;
 
@@ -105,7 +100,6 @@ body
         header section
         {
             grid-area: text;
-            margin: 0 auto;
 
             display: grid;
             grid-template-rows: 35px 100px 1fr;
